@@ -7,7 +7,7 @@ class Solution:
             while(n!=0):
                 rem=n%10
                 sum=sum+rem*rem
-                n=int(n/10)
+                n=n//10
             if sum in map:
                 return False
             map.append(sum)
