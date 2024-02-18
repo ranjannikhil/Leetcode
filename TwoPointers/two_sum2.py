@@ -9,3 +9,4 @@ class Solution:
                 rp=rp-1
             else:
                 lp=lp+1
+        return []
