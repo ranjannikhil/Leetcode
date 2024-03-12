@@ -5,6 +5,5 @@ class Solution:
         """
         n=len(nums)
         for i in range(k):
-          temp=nums[:-1]
-          nums[0]=nums[-1]
-          nums[1:]=temp
+            nums.insert(0,nums[n-1])
+            nums.pop(n
