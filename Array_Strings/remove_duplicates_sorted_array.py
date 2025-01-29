@@ -3,14 +3,9 @@ class Solution:
         prev=None
         j=0
         for i in range(len(nums)):
-            if nums[i]!=prev:
+            if prev!=nums[i]:
                 nums[j]=nums[i]
+                j=j+1
                 prev=nums[i]
-                j+=1
-                n=i+1
-                if n<len(nums) and nums[i]==nums[i+1]:
-                  nums[j]=nums[i+1]
-                  j=j+1
-        nums=nums[:j]  
-        print(nums)
-        return j
+
+        nums[:] = nums[:j]
